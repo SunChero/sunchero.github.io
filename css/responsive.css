@@ -1,0 +1,271 @@
+
+
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.experience-line ul li:nth-child(2n) .experience-time {
+		left: -50%;
+	}
+}
+
+/* Tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.about-us-area {
+		padding: 170px 0;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.contact-image img {
+		width: 90%
+	}
+
+	.experience-line ul li {
+		padding: 0 40px 0px 0px;
+	}
+
+	.experience-line ul li {
+		padding: 0
+	}
+
+	.experience-content {
+		width: 89%;
+	}
+
+	.experience-line ul li:nth-child(2n)::before {
+		left: -49px;
+	}
+
+	.experience-line ul li:nth-child(2n) {
+		margin-right: -40px;
+	}
+
+	.experience-line ul li:nth-child(2n) .experience-time {
+		left: -80%;
+	}
+
+}
+
+/* small mobile :320px. */
+
+@media only screen and (min-width: 320px) and (max-width: 574px) {
+
+
+	.about-us-area {
+		padding: 170px 0;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.progress-pl {
+		padding-left: 15px;
+	}
+
+	.progress-pr {
+		padding-right: 0px;
+	}
+
+	.mb-bot-55-mobile {
+		margin-bottom: 75px
+	}
+
+	.contact-image {
+		display: none
+	}
+
+	.mian-footer {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+
+	.experience-line ul li {
+		width: 100%;
+		padding: 0;
+		margin-top: 30px
+	}
+
+	.experience-line ul li:nth-child(2n) .experience-time {
+		display: none
+	}
+
+	.experience-line ul li:nth-child(2n+1) .experience-time {
+		display: none
+	}
+
+	.experience-line ul li:nth-child(2n+1)::before {
+		display: none
+	}
+
+	.experience-line ul li:nth-child(2n)::before {
+		display: none
+	}
+
+	.ml-ec::before {
+		display: none
+	}
+
+	.mr-ec::before {
+		display: none
+	}
+
+	.experience-icon {
+		display: none
+	}
+
+	.experience-line::before {
+		display: none
+	}
+
+	.single-count-area {
+		margin-top: 30px;
+		text-align: center
+	}
+
+	.about-img {
+		margin-bottom: 30px
+	}
+
+	.intro-text h1 {
+		font-size: 37px;
+		line-height: 50px;
+	}
+
+	h2 {
+		font-size: 43px !important
+	}
+
+	.logo-area img {
+		padding-top: 27px;
+		padding-bottom: 10px;
+	}
+
+	.main-navigation.sticky .logo-area img {
+		padding-top: 25px;
+		padding-bottom: 15px;
+	}
+
+	br {
+		display: none
+	}
+	.right-sidebar{margin-top: 30px}
+}
+
+/* Large Mobile :575px. */
+
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+	.mobile-social-icon {
+		display: block
+	}
+
+	.myself-img {
+		display: none
+	}
+
+	.social-icon-area {
+		display: none
+	}
+
+	.about-us-area {
+		padding: 170px 0;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.progress-pl {
+		padding-left: 15px;
+	}
+
+	.progress-pr {
+		padding-right: 0px;
+	}
+
+	.mb-bot-55-mobile {
+		margin-bottom: 75px
+	}
+
+	.contact-image {
+		display: none
+	}
+
+	.mian-footer {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+
+	.experience-line ul li {
+		width: 100%;
+		padding: 0;
+		margin-top: 30px
+	}
+
+	.experience-line ul li:nth-child(2n) .experience-time {
+		display: none
+	}
+
+	.experience-line ul li:nth-child(2n+1) .experience-time {
+		display: none
+	}
+
+	.experience-line ul li:nth-child(2n+1)::before {
+		display: none
+	}
+
+	.experience-line ul li:nth-child(2n)::before {
+		display: none
+	}
+
+	.ml-ec::before {
+		display: none
+	}
+
+	.mr-ec::before {
+		display: none
+	}
+
+	.experience-icon {
+		display: none
+	}
+
+	.experience-line::before {
+		display: none
+	}
+
+	.single-count-area {
+		margin-top: 30px;
+		text-align: center
+	}
+
+	.about-img {
+		margin-bottom: 30px
+	}
+
+	.intro-text h1 {
+		font-size: 37px;
+		line-height: 50px;
+	}
+
+	h2 {
+		font-size: 43px !important
+	}
+
+	.main-navigation.sticky .logo-area img {
+		padding-top: 25px;
+		padding-bottom: 15px;
+	}
+
+	.logo-area img {
+		padding-top: 27px;
+		padding-bottom: 10px;
+	}
+
+	br {
+		display: none
+	}
+	.right-sidebar{margin-top: 30px}
+}
+
+
+/* Responsive CSS END
+/*----------------------------------------*/
