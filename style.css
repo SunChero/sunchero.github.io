@@ -62,7 +62,7 @@ body {
 	font-family: 'Titillium Web', sans-serif;
 	margin: 0px;
 	padding: 0px;
-	background-color: #090a14;
+	background-color: #101325
 }
 
 ::-moz-selection {
@@ -169,7 +169,7 @@ ul {
 	text-transform: capitalize;
 	font-weight: 600;
 	margin-bottom: 0;
-	color: goldenrod;
+	color: #c79000
 }
 
 .section-heading-1 h2 {
@@ -186,7 +186,7 @@ ul {
 	content: '';
 	left: 0;
 	bottom: -15px;
-	background-color: goldenrod;
+	background-color: #c79000;
 	height: 4px;
 	width: 50px;
 }
@@ -200,7 +200,7 @@ ul {
 	text-transform: capitalize;
 	font-weight: 600;
 	margin-bottom: 0;
-	color: #FFD15A
+	color: #c79000
 }
 
 .section-heading-2 h2 {
@@ -217,7 +217,7 @@ ul {
 	content: '';
 	right: 0;
 	bottom: -15px;
-	background-color: #FFD15A;
+	background-color: #c79000;
 	height: 4px;
 	width: 50px;
 }
@@ -231,7 +231,7 @@ ul {
 	text-transform: capitalize;
 	font-weight: 600;
 	margin-bottom: 0;
-	color: goldenrod;
+	color: #c79000
 }
 
 .section-heading-3 h2 {
@@ -248,7 +248,7 @@ ul {
 	content: '';
 	left: 50%;
 	bottom: -15px;
-	background-color: goldenrod;
+	background-color: #c79000;
 	height: 4px;
 	width: 50px;
 	-webkit-transform: translateX(-50%);
@@ -294,7 +294,7 @@ ul {
 	top: 50%;
 	width: 40px;
 	height: 3px;
-	background-color: #FFD15A;
+	background-color: #c79000;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%)
 }
@@ -339,7 +339,7 @@ ul {
 }
 
 .main-menu ul li a.current {
-	color: #FFD15A;
+	color: #c79000;
 	;
 }
 
@@ -364,7 +364,7 @@ ul {
 	right: 0;
 	width: 100%;
 	z-index: 99;
-	background-color: #212529;
+	background-color: rgba(33, 32, 71);
 	-webkit-box-shadow: 0px 0px 4px rgba(2, 5, 21, 0.7);
 	box-shadow: 0px 0px 50px rgba(2, 5, 21, 0.7);
 	-webkit-transition: all 1s ease 0s;
@@ -406,7 +406,7 @@ ul {
 .header-content-area {
 	height: 100vh;
 	width: 100%;
-	background-image: url(img/header.jpg);
+	/* background-image: url(img/header.jpg); */
 	background-size: cover;
 	position: relative;
 	display: -webkit-box;
@@ -426,15 +426,15 @@ ul {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background-color: rgb(5 5 10 / 70%);
+	background-color: rgba(33, 32, 71, 0.7);
 	height: 100vh;
 	width: 100%
 }
 
 /*2.4 header text*/
 .intro-text {
-	text-align: center;
-	padding-top: 60px;
+	/* text-align: center; */
+	/* padding-top: 60px; */
 }
 
 .intro-text h1 {
@@ -447,7 +447,7 @@ ul {
 }
 
 .intro-text h1 span {
-	color: goldenrod;
+	color: #c79000
 }
 
 .intro-text p {
@@ -469,7 +469,7 @@ ul {
 }
 
 .learnmore .skill-btn {
-	background-color: goldenrod;
+	background-color: #c79000;
 	-webkit-box-shadow: 0px 4px 64px rgba(255, 209, 90, 0.46);
 	box-shadow: 0px 4px 64px rgba(255, 209, 90, 0.46);
 	border-radius: 50px;
@@ -483,7 +483,21 @@ ul {
 	font-size: 16px;
 	font-weight: 700;
 }
-
+input  {
+	background-color: #c79000;
+	-webkit-box-shadow: 0px 4px 64px rgba(255, 209, 90, 0.46);
+	box-shadow: 0px 4px 64px rgba(255, 209, 90, 0.46);
+	border-radius: 50px;
+	text-decoration: none;
+	color: #212047;
+	text-transform: capitalize;
+	display: inline-block;
+	padding: 12px 35px;
+	-webkit-transition: .5s;
+	transition: .5s;
+	font-size: 16px;
+	font-weight: 700;
+}
 .learnmore .skill-btn:hover {
 	color: #fff
 }
@@ -497,7 +511,7 @@ ul {
 }
 
 .header-down-arrow i {
-	color: #FFD15A;
+	color: #c79000;
 	font-size: 35px
 }
 
@@ -507,7 +521,7 @@ ul {
 	overflow: hidden;
 	border-bottom-left-radius: 64% 62%;
 	border-bottom-right-radius: 50% 10%;
-	background-color: rgb(33 37 41);
+	background-color: rgb(8 8 30);
 	position: relative
 }
 
@@ -541,7 +555,7 @@ ul {
 .about-button a:first-child {
 	border: 1px solid #fff;
 	padding: 11px 30px;
-	color: #FFD15A;
+	color: #c79000;
 	text-transform: capitalize;
 	display: inline-block;
 	border-radius: 35px;
@@ -556,7 +570,7 @@ ul {
 }
 
 .about-button a:last-child {
-	background-color: goldenrod;
+	background-color: #c79000;
 	padding: 12px 30px;
 	color: #212047;
 	text-transform: capitalize;
@@ -604,7 +618,7 @@ ul {
 }
 
 .progressbar-title {
-	color: goldenrod;
+	color: #c79000;
 	font-size: 35px;
 	margin: 0px 0 10px;
 	text-transform: uppercase;
@@ -624,7 +638,7 @@ ul {
 .progress .progress-bar {
 	-webkit-animation: progress 3s;
 	animation: progress 3s;
-	background-color: goldenrod;
+	background-color: #c79000
 }
 
 @-webkit-keyframes progress {
@@ -655,7 +669,7 @@ ul {
 
 /*5.1 single service*/
 .single-services {
-	background-color: #212529;
+	background-color: #212047;
 	padding: 50px 30px;
 	border-radius: 10px;
 }
@@ -681,7 +695,7 @@ ul {
 }
 
 .service-content a {
-	color: #FFD15A;
+	color: #c79000;
 	font-size: 16px;
 	text-transform: capitalize;
 	margin-top: 10px;
@@ -733,7 +747,7 @@ ul {
 
 /*===========6. Counter Area CSS==============*/
 .portfolio-counter-area {
-	background-image: url('img/counter-bg.png');
+	background-image: url('/img/counter-bg.png');
 	padding: 140px 0;
 	background-position: center;
 	background-size: cover;
@@ -742,8 +756,9 @@ ul {
 
 /*6.1 single counter*/
 .single-count-area {
-	color: goldenrod;
+	color: #c79000;
 	text-transform: uppercase;
+
 }
 
 .single-count-area span {
@@ -754,7 +769,7 @@ ul {
 .single-count-area strong {
 	font-size: 40px;
 	font-weight: 700;
-	color: goldenrod;
+	color: #c79000
 }
 
 .single-count-area p {
@@ -782,7 +797,7 @@ ul {
 	left: 50%;
 	height: 100%;
 	width: 1.5px;
-	background: #FFD15A;
+	background: #c79000;
 	background: -webkit-gradient(linear, left top, right top, from(#222529), to(#373B44));
 	background: linear-gradient(to right, #222529, #373B44);
 
@@ -798,8 +813,8 @@ ul {
 }
 
 .experience-icon i {
-	color: #FFD15A;
-	border: 1px solid #FFD15A;
+	color: #c79000;
+	border: 1px solid #c79000;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -832,7 +847,7 @@ ul {
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
-	background-color: #FFD15A;
+	background-color: #c79000;
 	top: 50%;
 	right: -8px;
 	-webkit-box-shadow: 0 0 0 3px rgba(255, 209, 90, 0.15);
@@ -861,7 +876,7 @@ ul {
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
-	background-color: #FFD15A;
+	background-color: #c79000;
 	top: 50%;
 	left: -8px;
 	-webkit-box-shadow: 0 0 0 3px rgba(255, 209, 90, 0.15);
@@ -929,7 +944,7 @@ ul {
 
 .experience-content h4 {
 	text-transform: uppercase;
-	color: goldenrod;
+	color: #c79000;
 	font-size: 23px
 }
 
@@ -980,7 +995,7 @@ ul {
 }
 
 .projects-filter li.active a {
-	color: #FFD15A
+	color: #c79000
 }
 
 /*8.2 single project*/
@@ -1044,7 +1059,7 @@ ul {
 }
 
 .hover-text a:hover {
-	color: #FFD15A
+	color: #c79000
 }
 
 /*=========9. Testimonial Area CSS========*/
@@ -1055,7 +1070,7 @@ ul {
 
 /*9.1 client text*/
 .client-say {
-	background-image: url(img/testimonial/client-bg.png);
+	background-image: url(/img/testimonial/client-bg.png);
 	text-align: center;
 	background-repeat: no-repeat
 }
@@ -1073,7 +1088,7 @@ ul {
 }
 
 .client-text h4 {
-	color: #FFD15A;
+	color: #c79000;
 	font-weight: 700;
 	margin-top: 30px;
 	text-transform: uppercase;
@@ -1081,7 +1096,7 @@ ul {
 }
 
 .client-text span {
-	color: #FFD15A;
+	color: #c79000;
 	font-size: 20px;
 	text-transform: capitalize;
 	display: block;
@@ -1104,7 +1119,7 @@ ul {
 }
 
 .client-say .slick-dots li.slick-active button {
-	background-color: #FFD15A;
+	background-color: #c79000;
 	width: 30px;
 }
 
@@ -1132,7 +1147,7 @@ ul {
 }
 
 .client-location i {
-	color: #FFD15A;
+	color: #c79000;
 	font-size: 17px;
 	-webkit-animation: blink 1s linear infinite;
 	animation: blink 2s linear infinite;
@@ -1273,7 +1288,7 @@ ul {
 /*==========11. Footer Area CSS==========*/
 
 .mian-footer {
-	background-color: #212529;
+	background-color: #0b0b23;
 	padding: 100px 0;
 	position: relative;
 	border-top-left-radius: 45% 4%;
@@ -1351,7 +1366,7 @@ ul {
 }
 
 .contact-form input[type="button"] {
-	background: #FFD15A;
+	background: #c79000;
 	-webkit-box-shadow: 0px 4px 64px rgba(255, 209, 90, 0.15);
 	box-shadow: 0px 4px 64px rgba(255, 209, 90, 0.15);
 	border-radius: 65px;
@@ -1378,19 +1393,19 @@ ul {
 
 /*11.3 copyright text*/
 .copyright {
-	background-color: #090a14;
+	background-color: #101325;
 	padding: 15px 0;
 	text-align: center;
 	position: relative;
 }
 
 .copyright p {
-	color: goldenrod;
+	color: #c79000;
 }
 
 .copyright a {
 	font-weight: 700;
-	color: #FFD15A
+	color: #c79000
 }
 /*=========12. Blog Details Area CSS========*/
 .blog-details {
@@ -1400,7 +1415,7 @@ ul {
 .details-content-blog {
 	height: 45vh;
 	width: 100%;
-	background-image: url(img/blog/blog-details.jpg);
+	background-image: url(/img/blog/blog-details.jpg);
 	overflow: hidden;
 	position: relative;
 	display: -webkit-box;
@@ -1446,7 +1461,7 @@ ul {
 	bottom: -15px;
 	width: 50px;
 	height: 3px;
-	background-color: #FFD15A;
+	background-color: #c79000;
 	-webkit-transform: translate(-50%);
 	transform: translate(-50%)
 }
@@ -1484,7 +1499,7 @@ ul {
 }
 
 .right-sidebar ul li a:hover {
-	color: #FFD15A
+	color: #c79000
 }
 
 .social-icon-blog ul li {

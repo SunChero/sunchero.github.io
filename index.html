@@ -2,7 +2,7 @@
 <html lang="ZXX">
 
 <head>
-	<title>.Adil 2</title>
+	<title>.Adil</title>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -39,14 +39,15 @@
 			box-shadow: 2px 2px 3px #000000;
 			z-index: 100;
 		}
-		.my-whatsApp{
-			margin-top:16px;
+
+		.my-whatsApp {
+			margin-top: 16px;
 		}
-				</style>
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
-<body style="display:none;">
+<body>
 	<!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
@@ -65,9 +66,10 @@
 			<div class="container">
 				<div class="row">
 					<!-- logo-area-->
-					<div class="col-xl-2 col-lg-3 col-md-3">
-						<div class="logo-area">
-							<a href="index.html"><img src="img/logo.png" alt="enventer"></a>
+					<div class="col-xl-2 col-lg-3 col-md-3" style="padding-top: 13px;font-style: italic;">
+						<div class="intro-text">
+							<h1 style="">.ADIL</h1>
+							<!-- <a href="index.html"><img src="img/logo.png" alt="enventer"></a> -->
 						</div>
 					</div>
 					<!-- mainmenu-area-->
@@ -78,8 +80,8 @@
 									<li>
 										<a href="#contact">Contact</a>
 									</li>
-									
-									<li>
+
+									<li style="display:none;">
 										<a href="#services">Services</a>
 									</li>
 									<li>
@@ -104,27 +106,44 @@
 	<!-- =========Header Content Area=========== -->
 	<section>
 		<div class="header-content-area">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12">
-						<!--header text-->
-						<div class="intro-text">
-							<h1><span>I AM ADIL HANIFI</span> <br>
-								<span> & I AM A</span> Software and systems architect.</h1>
-							<p>with approximately 20 years of experience in the field ranging from </br> networks, systems ,developpment and integrations of various products and platforms</p>
-							<div class="learnmore">
-								<a href="#expertise" class="skill-btn">My Works</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--arrow button-->
-				<div class="header-down-arrow">
-					<a href="#about"><i class="fas fa-long-arrow-alt-down"></i></a>
-				</div>
-			</div>
+			
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Column: Text -->
+      <div class="col-lg-6 col-md-12">
+        <div class="intro-text">
+          <h1>
+            <span>ADIL HANIFI</span><br>
+            <span>I AM A</span> Security Specialist &amp; Systems Architect
+          </h1>
+          <p>
+            Architecting secure, scalable systems and defending against cyber threats for over 20 years.<br>
+            Specializing in zero-trust networks, cloud security, and secure DevOps practices.
+          </p>
+          <div class="learnmore">
+            <a href="#expertise" class="skill-btn">My Works</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Image -->
+      <div class="col-lg-6 col-md-12">
+        <div class="hero-image text-center">
+          <img src="img/ai.png" alt="Adil Hanifi" class="img-fluid rounded" style="filter: grayscale(1)">
+        </div>
+      </div>
+    </div>
+
+    <!-- Down Arrow -->
+    <div class="header-down-arrow text-center mt-5">
+      <a href="#about"><i class="fas fa-long-arrow-alt-down"></i></a>
+    </div>
+  </div>
+
+
 		</div>
 	</section>
+	
 	<!-- =========About Area=========== -->
 	<section id="about">
 		<div class="about-us-area">
@@ -144,13 +163,21 @@
 								<h2>About Me</h2>
 							</div>
 							<div class="about-text">
-								<p>Hi, My name is Adil, Im a Systems Engineer and  Applications/Mobile developper.
-							I Started My Career in early 2000 as a security and network architect, working on tecnologies like VPNs and firewalls.</p>
-								<p>i few years later, Linux started jumping into unix territory, so i moved to systems admining and started working on migrating old unix systems to linux.</p>
-								<p>big compagnies also started moving from novell  to Microsoft, thats why i also jumped to the Microsoft world, just in time when technologies like active directory and sql server started to shine.</p>
-								<p>enuf history, the last few years i moved to the cloud , public, private, or hybrid .. you name it!.
-								nowadays im working with technologies like kubernetes, cloud migrations and integrations like SSOs ..etc.</p>
-								<p>with soon to be 20 years in the field, its hard to mention all the work and technologies i worked with.. so if you have a question...drop me a line :)</p>
+								<p>I’m Adil, a Cyber Security–focused Systems Engineer with nearly 20 years of
+									experience securing enterprise infrastructures across on-prem, cloud, and hybrid
+									environments.
+									<br>
+									In recent years, my focus has transitioned to cloud and cloud-native security,
+									spanning public, private, and hybrid environments. I work extensively with cloud
+									security architecture, Kubernetes security, identity and access management (IAM),
+									SSO integrations, and secure cloud migrations, helping organizations modernize while
+									maintaining strong security posture.
+									<br>
+									With experience across multiple generations of technology, I bring a holistic,
+									security-first mindset, combining deep infrastructure knowledge with modern
+									cyber-security practices. If you’d like to explore specific technologies,
+									architectures, or security challenges, feel free to reach out.
+								</p>
 							</div>
 							<div class="about-button">
 								<a href="#contact">Contact Me</a>
@@ -161,7 +188,8 @@
 				</div>
 			</div>
 			<!--section number-->
-			<div class="section-number" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="800">
+			<div class="section-number" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-sine"
+				data-aos-duration="800">
 				<h1>01</h1>
 			</div>
 		</div>
@@ -181,183 +209,275 @@
 				</div>
 				<div class="progress-bar-area">
 					<div class="row">
-						<!--progress bar-->
+						<!-- Left Column -->
 						<div class="col-md-6 progress-pr mb-bot-55-mobile">
-							<h4 class="progress-top">Systems Infra</h4>
-							<h3 class="progressbar-title"><span class="progessbar-name">Microsoft Windows</span><span class="progressbar-value">90%</span></h3>
+
+							<!-- Cyber Security & Defense -->
+							<h4 class="progress-top">Cyber Security & Defense</h4>
+
+							<h3 class="progressbar-title">
+								<span class="progessbar-name">Security Architecture & Defense-in-Depth</span>
+								<span class="progressbar-value">90%</span>
+							</h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 90%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Unix/Linux </span><span class="progressbar-value">95%</span></h3>
+
+							<h3 class="progressbar-title">
+								<span class="progessbar-name">MITRE ATT&CK / Threat Modeling</span>
+								<span class="progressbar-value">80%</span>
+							</h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 80%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">VMware</span><span class="progressbar-value">95%</span></h3>
+
+							<h3 class="progressbar-title">
+								<span class="progessbar-name">Incident Response & Handling</span>
+								<span class="progressbar-value">85%</span>
+							</h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 85%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">KVM</span><span class="progressbar-value">85%</span></h3>
+
+							<h3 class="progressbar-title">
+								<span class="progessbar-name">Digital Forensics & Log Analysis</span>
+								<span class="progressbar-value">75%</span>
+							</h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 75%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Kubernetes</span><span class="progressbar-value">95%</span></h3>
+
+							<h3 class="progressbar-title">
+								<span class="progessbar-name">SIEM / Monitoring / Alerting (Splunk, QRadar)</span>
+								<span class="progressbar-value">80%</span>
+							</h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 80%;"></div>
 							</div>
-							<h4 class="progress-top">Platforms & cloud</h4>
-							<h3 class="progressbar-title"><span class="progessbar-name">Microsoft Azure</span><span class="progressbar-value">90%</span></h3>
+
+							<h3 class="progressbar-title">
+								<span class="progessbar-name">Identity Security (IAM, SSO, MFA, PAM)</span>
+								<span class="progressbar-value">90%</span>
+							</h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 90%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Office 365</span><span class="progressbar-value">90%</span></h3>
+
+							<h3 class="progressbar-title">
+								<span class="progessbar-name">Cloud Security (Azure / AWS / GCP)</span>
+								<span class="progressbar-value">85%</span>
+							</h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 85%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Amazon AWS</span><span class="progressbar-value">80%</span></h3>
+
+							<h3 class="progressbar-title">
+								<span class="progessbar-name">Vulnerability Management & Hardening</span>
+								<span class="progressbar-value">85%</span>
+							</h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 85%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Google Cloud</span><span class="progressbar-value">60%</span></h3>
+
+							<h3 class="progressbar-title">
+								<span class="progessbar-name">Zero Trust & Secure Access Models</span>
+								<span class="progressbar-value">80%</span>
+							</h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 80%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Salesforce</span><span class="progressbar-value">50%</span></h3>
+
+							<h3 class="progressbar-title">
+								<span class="progessbar-name">Endpoint Security & Threat Hunting</span>
+								<span class="progressbar-value">80%</span>
+							</h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 80%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Sharepoint</span><span class="progressbar-value">90%</span></h3>
+
+							<h3 class="progressbar-title">
+								<span class="progessbar-name">Penetration Testing / Red Teaming</span>
+								<span class="progressbar-value">70%</span>
+							</h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 70%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">ECM/CMS</span><span class="progressbar-value">90%</span></h3>
+
+							<!-- Secure Systems & Infrastructure -->
+							<h4 class="progress-top">Secure Systems & Infrastructure</h4>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">Microsoft Windows
+									Security</span><span class="progressbar-value">90%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+								<div class="progress-bar progress-bar-success" style="width: 90%;"></div>
 							</div>
-							<h4 class="progress-top">Security</h4>
-							<h3 class="progressbar-title"><span class="progessbar-name">Firewalls</span><span class="progressbar-value">80%</span></h3>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">Unix/Linux Security</span><span
+									class="progressbar-value">95%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+								<div class="progress-bar progress-bar-success" style="width: 95%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Cluster/ Load Balancers</span><span class="progressbar-value">80%</span></h3>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">VMware / KVM</span><span
+									class="progressbar-value">90%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+								<div class="progress-bar progress-bar-success" style="width: 90%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Web Filters</span><span class="progressbar-value">90%</span></h3>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">Kubernetes / Container
+									Security</span><span class="progressbar-value">95%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+								<div class="progress-bar progress-bar-success" style="width: 95%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Api Gateways</span><span class="progressbar-value">80%</span></h3>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">Network Security (Firewalls,
+									IDS/IPS, VPN)</span><span class="progressbar-value">85%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+								<div class="progress-bar progress-bar-success" style="width: 85%;"></div>
 							</div>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">Web / API Security (WAF, API
+									Gateway)</span><span class="progressbar-value">85%</span></h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" style="width: 85%;"></div>
+							</div>
+
 						</div>
-						<!--progress bar-->
+
+						<!-- Right Column -->
 						<div class="col-md-6 progress-pl">
-								<h4 class="progress-top">Architecture /Integration</h4>
-								<h3 class="progressbar-title"><span class="progessbar-name">Devops</span><span class="progressbar-value">80%</span></h3>
-								<div class="progress">
-									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-								</div>
-								<h3 class="progressbar-title"><span class="progessbar-name">CI / CD</span><span class="progressbar-value">80%</span></h3>
-								<div class="progress">
-									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-								</div>
-								<h3 class="progressbar-title"><span class="progessbar-name">Git / BitBucket</span><span class="progressbar-value">90%</span></h3>
-								<div class="progress">
-									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-								</div>
-								<h3 class="progressbar-title"><span class="progessbar-name">OpenID /Jwt /SAML</span><span class="progressbar-value">80%</span></h3>
-								<div class="progress">
-									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-								</div>
-								<h3 class="progressbar-title"><span class="progessbar-name">IaC / Terraform</span><span class="progressbar-value">80%</span></h3>
-								<div class="progress">
-									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-								</div>
-								<h3 class="progressbar-title"><span class="progessbar-name">Docker/ Kubernetes</span><span class="progressbar-value">80%</span></h3>
-								<div class="progress">
-									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-								</div>
-								<h3 class="progressbar-title"><span class="progessbar-name">Istio / Traefik</span><span class="progressbar-value">80%</span></h3>
-								<div class="progress">
-									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-								</div>
-								<h3 class="progressbar-title"><span class="progessbar-name">Prometheus / Grafana</span><span class="progressbar-value">80%</span></h3>
-								<div class="progress">
-									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-								</div>
-								<h3 class="progressbar-title"><span class="progessbar-name">Rabbit MQ</span><span class="progressbar-value">90%</span></h3>
-								<div class="progress">
-									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-								</div>
-							<h4 class="progress-top">Development</h4>
-							<h3 class="progressbar-title"><span class="progessbar-name">Javascript/Web Apis</span><span class="progressbar-value">95%</span></h3>
+
+							<!-- Cloud & Platform Security -->
+							<h4 class="progress-top">Cloud & Platform Security</h4>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">Microsoft Azure
+									Security</span><span class="progressbar-value">90%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 90%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">IOS/ Android</span><span class="progressbar-value">95%</span></h3>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">AWS Security</span><span
+									class="progressbar-value">80%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 80%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Microsoft/.Net</span><span class="progressbar-value">85%</span></h3>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">GCP Security</span><span
+									class="progressbar-value">60%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 60%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Java</span><span class="progressbar-value">60%</span></h3>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">Office 365 / Sharepoint
+									Security</span><span class="progressbar-value">90%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 90%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Php/Python</span><span class="progressbar-value">60%</span></h3>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">Salesforce Security</span><span
+									class="progressbar-value">50%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 50%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Scripting(Bash / powershell)</span><span class="progressbar-value">95%</span></h3>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">ECM / CMS Security</span><span
+									class="progressbar-value">90%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 90%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Golang</span><span class="progressbar-value">95%</span></h3>
+
+							<!-- Secure Architecture & DevSecOps -->
+							<h4 class="progress-top">Secure Architecture & DevSecOps</h4>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">DevSecOps Practices</span><span
+									class="progressbar-value">80%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 80%;"></div>
 							</div>
-							<h4 class="progress-top">Databases</h4>
-							<h3 class="progressbar-title"><span class="progessbar-name">SQL Server</span><span class="progressbar-value">85%</span></h3>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">CI / CD Security</span><span
+									class="progressbar-value">80%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 80%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Oracle</span><span class="progressbar-value">70%</span></h3>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">IaC / Terraform
+									Security</span><span class="progressbar-value">80%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 80%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Postgres/Mysql</span><span class="progressbar-value">70%</span></h3>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">Docker / Kubernetes
+									Security</span><span class="progressbar-value">80%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 80%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Mongo</span><span class="progressbar-value">60%</span></h3>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">OpenID / JWT / SAML</span><span
+									class="progressbar-value">80%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 80%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Cassandra</span><span class="progressbar-value">60%</span></h3>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">Git / BitBucket
+									Security</span><span class="progressbar-value">90%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 90%;"></div>
 							</div>
-							<h3 class="progressbar-title"><span class="progessbar-name">Redis</span><span class="progressbar-value">80%</span></h3>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">Monitoring & Logging (Prometheus
+									/ Grafana / ELK)</span><span class="progressbar-value">80%</span></h3>
 							<div class="progress">
-								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+								<div class="progress-bar progress-bar-danger" style="width: 80%;"></div>
 							</div>
-							
-							
-							
+
+							<h3 class="progressbar-title"><span class="progessbar-name">Rabbit MQ / Messaging
+									Security</span><span class="progressbar-value">90%</span></h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" style="width: 90%;"></div>
+							</div>
+
+							<!-- Database Security -->
+							<h4 class="progress-top">Database Security</h4>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">SQL Server</span><span
+									class="progressbar-value">85%</span></h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" style="width: 85%;"></div>
+							</div>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">Oracle</span><span
+									class="progressbar-value">70%</span></h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" style="width: 70%;"></div>
+							</div>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">Postgres / MySQL</span><span
+									class="progressbar-value">70%</span></h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" style="width: 70%;"></div>
+							</div>
+
+							<h3 class="progressbar-title"><span class="progessbar-name">MongoDB / Cassandra /
+									Redis</span><span class="progressbar-value">70%</span></h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" style="width: 70%;"></div>
+							</div>
+
 						</div>
 					</div>
 				</div>
 			</div>
 			<!--section number-->
-			<div class="section-number" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="800">
+			<div class="section-number" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-sine"
+				data-aos-duration="800">
 				<h1>02</h1>
 			</div>
 		</div>
 	</section>
-	<section id="services">
+
+
+	<section id="services" style="display:none;">
 		<div class="services-area">
 			<div class="container">
 				<div class="row">
@@ -378,8 +498,10 @@
 							</div>
 							<div class="service-content">
 								<h4>Integration & Architecture</h4>
-								<p>You are deploying on Azure or AWS, or Maybe you want a new modern solution to communicate with your legacy applications.</br> you want to review the stability and performance of your current stack ...</p>
-								
+								<p>You are deploying on Azure or AWS, or Maybe you want a new modern solution to
+									communicate with your legacy applications.</br> you want to review the stability and
+									performance of your current stack ...</p>
+
 							</div>
 						</div>
 					</div>
@@ -391,10 +513,12 @@
 							</div>
 							<div class="service-content">
 								<h4>Systems and Infra</h4>
-								<p>you are upgrading your currenct server or products, or maybe you want to troobleshoot some issues with your current infra...either on premise, virtual or on the cloud.
-								keep in mind, deploying new infrascture nowadays is done via code, throught tecnologies like terraform, if so .. let me know!
+								<p>you are upgrading your currenct server or products, or maybe you want to troobleshoot
+									some issues with your current infra...either on premise, virtual or on the cloud.
+									keep in mind, deploying new infrascture nowadays is done via code, throught
+									tecnologies like terraform, if so .. let me know!
 								</p>
-								
+
 							</div>
 						</div>
 					</div>
@@ -406,24 +530,27 @@
 							</div>
 							<div class="service-content">
 								<h4>Web / Mobile Development</h4>
-								<p>looking for a new transactionnal web site? or maybe you want that solution to play well with your current stack. or maybe you want to develop a new mobile application to stay more closely to your customers</p>
-								
+								<p>looking for a new transactionnal web site? or maybe you want that solution to play
+									well with your current stack. or maybe you want to develop a new mobile application
+									to stay more closely to your customers</p>
+
 							</div>
 						</div>
 					</div>
 					<!--single services-->
-				
+
 				</div>
 			</div>
 			<!--section number-->
-			<div class="section-number" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="800">
+			<div class="section-number" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-sine"
+				data-aos-duration="800">
 				<h1>03</h1>
 			</div>
 		</div>
 	</section>
 
 	<!-- =========Counter Area=========== -->
-	<div class="portfolio-counter-area">
+	<div class="portfolio-counter-area" style="display:none;">
 		<div class="container">
 			<div class="count-area">
 				<div class="row">
@@ -459,187 +586,222 @@
 	<section>
 		<div class="experiences-area">
 			<div class="container">
-				<div class="row">
-					<!--section heading-->
-					<div class="col-xl-12">
-						<div class="section-heading-3 mt-100">
-							<h4>Some of</h4>
-							<h2>My Experience</h2>
-						</div>
-					</div>
+			<div class="row">
+				<!--section heading-->
+				<div class="col-xl-12">
+				<div class="section-heading-3 mt-100">
+					<h4>Some of</h4>
+					<h2>My Cybersecurity Experience</h2>
 				</div>
-				<div class="row">
-					<div class="col-xl-12">
-						<div class="experience-line">
-							<div class="experience-icon">
-								<i class="fas fa-briefcase"></i>
-							</div>
-							<ul>
-								<!--single experience-->
-								<li>
-									<div class="experience-content ml-ec" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="800">
-										<h4>Gov</h4>
-										<span>Systems Architect</span>
-										<p>* Main task: build architecture and maintain infra in production
-											Manage and maintain Linux Servers.</br>
-											Manage Docker environment.
-											Manage and administer Redhat Virtualisation stack.
-											Administer Redhat Satelitte server.
-											Manage and Administer Kubernetes / Openstack
-											Secure and update servers
-											Support developers and Help desk
-											Manage and maintain Monitoring solutions (prometheus)
-											Support DBAs and ERP developers
-											Maintain HP infrastructure
-											write Infrastructure as code (IAC/ terraform)</p>
-									</div>
-									<div class="experience-time">
-										<h4>2015 - 2020</h4>
-									</div>
-								</li>
-								<!--single experience-->
-								<li>
-									<div class="experience-content mr-ec" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="800">
-										<h4>Gov</h4>
-										<span>Sharepoint Administrator</span>
-										<p>* Main task: Maintain and manage Sharepoint Farm and ECM solutions</br>
-											- Manage a multi-farm Sharepoint Environment</br>
-											- Support Sharepoint ECM/OpenText</br>
-											- Support Sharepoint Developers</br>
-											- Manage and Adminiter ADFS Authentication</br>
-											- Manage Sharepoint Online Solutions</br>
-											- Manage and maintain surveillance systems (Monitoring).</p>
-									</div>
-									<div class="experience-time">
-										<h4>2013 - 2015</h4>
-									</div>
-								</li>
-								<!--single experience-->
-								<li>
-									<div class="experience-content ml-ec" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="800">
-										<h4>SSENSE</h4>
-										<span>Architect Integrator</span>
-										<p>* Main task: Integrate SharePoint platform with the SAP / ERP system and HQ.</br>
-											- Planning the integration of different systems.
-											- Define interfaces and APIs.
-											- Optimize and maintain the SAP / SharePoint systems.
-											- Supporting platform developers (web / e-commerce and HQ).
-											- Recommend best practices in architecture and development.</p>
-									</div>
-									<div class="experience-time">
-										<h4>2013 - 2014</h4>
-									</div>
-								</li>
-								<!--single experience-->
-								<li>
-									<div class="experience-content mr-ec">
-										<h4>City of Laval</h4>
-										<span>Systems Administrator</span>
-										<p>* Main task: Maintain and manage Windows, Linux, the SQL database infrastructure</br>
-											- Maintenance, management of e-tokens solutions</br>
-											- Manage and maintain the authentication servers and certificates.</br>
-											- Managing Windows (Active Directory, DNS, DHCP, WINS) infrastructure.</br>
-											- Operate the System Center suite.</br>
-											- Maintenance and management of Symantec Antivirus server.</br>
-											- Manage and maintain surveillance systems (Monitoring).</br>
-											- Application Support and Technicians.</br>
-											- Maintenance and creation of physical and virtual servers (HP / VMware).</p>
-									</div>
-									<div class="experience-time">
-										<h4>2009 - 2013</h4>
-									</div>
-								</li>
-								<li>
-									<div class="experience-content ml-ec">
-										<h4>CSC</h4>
-										<span>Database Manager</span>
-										<p>* Main task: Maintain and manage Windows, Linux, the SQL database infrastructure</br>
-												Maintenance, management and implementation of SQL databases.
-												Maintenance of Storage Networks.
-												Support for application developers.
-												Management of archives / backups routines
-												Monitoring and optimization of servers.</p>
-									</div>
-									<div class="experience-time">
-										<h4>2008 - 2009</h4>
-									</div>
-								</li>
-								<li>
-									<div class="experience-content mr-ec">
-										<h4>Covansys</h4>
-										<span>Systems Administrator</span>
-										<p>* Main task: Maintain and manage MSSQL/Oracle databases servers.
-											Maintenance, management and implementation of SQL databases.
-											Support for application developers.
-											Management of archives / backups
-											Monitoring and optimization of servers..</p>
-									</div>
-									<div class="experience-time">
-										<h4>2007 - 2008</h4>
-									</div>
-								</li>
-								<li>
-									<div class="experience-content ml-ec">
-										<h4>Wyeth / Pfizer</h4>
-										<span>Architect Integrator</span>
-										<p>* Main task: Managing Migration to SAP and JDE integrate the SharePoint platform.
-											manage the new collaboration platform (Sharepoint).
-											Integrate SharePoint with STARLIMS.
-											Plan and manage the security of the new ERP platform.
-											Assisting in the preparation of corporate policies( security and data retention).
-											Manage STARLIMS systems (document management system / chemical tests).
-											</p>
-									</div>
-									<div class="experience-time">
-										<h4>2005 - 2007</h4>
-									</div>
-								</li>
-								<li>
-									<div class="experience-content mr-ec">
-										<h4>Wyeth </h4>
-										<span>Network Administrator and Security</span>
-										<p>* Main task: Maintain and manage systems and network infrastructure.
-											Maintaining Cisco network architecture.
-											Manage Juniper and Checkpoint firewalls.
-											Manage VPN Access (Nortel).
-											Maintenance and management of McAfee Antivirus EPO server.
-											Security auditing and penetration testing.
-											Manage SCADA systems.
-											Manage STARLIMS systems.
-											</p>
-									</div>
-									<div class="experience-time">
-										<h4>2003 - 2005</h4>
-									</div>
-								</li>
-								<li>
-									<div class="experience-content ml-ec">
-										<h4>Nex</h4>
-										<span>Network Technician</span>
-										<p>* Main task: Migrate client stations and servers to the new
-											Exchange platform.
-											Migration from Exchange 5.5 to 2003 network.
-											Implement a solution OWA (Outlook Web Access).
-											Check the health of the network infrastructure.
-											Configuration and connection of new networking devices.
-											Verify and debug connectivity to application servers.
-											</p>
-									</div>
-									<div class="experience-time">
-										<h4>2002 - 2004</h4>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-xl-12">
+				<div class="experience-line">
+					<div class="experience-icon">
+					<i class="fas fa-shield-alt"></i>
+					</div>
+					<ul>
+
+					<!-- Senior Security Operation Analyst -->
+					<li>
+						<div class="experience-content ml-ec" data-aos="fade-in" data-aos-offset="100"
+						data-aos-easing="ease-in-sine" data-aos-duration="800">
+						<h4>Office of the Superintendent of Financial Institutions</h4>
+						<span>Senior Security Operation Analyst</span>
+						<p>April 2023 – Present<br>
+							Focus on incident response, threat hunting, and cloud/hybrid security. Key tasks include
+							monitoring alerts in Azure Sentinel and Microsoft Defender XDR, automating SOAR workflows, and
+							improving detection rules to reduce false positives.
+						</p>
+						</div>
+						<div class="experience-time">
+						<h4>2023 – Present</h4>
+						</div>
+					</li>
+
+					<!-- Network Infrastructure Specialist -->
+					<li>
+						<div class="experience-content mr-ec" data-aos="fade-in" data-aos-offset="100"
+						data-aos-easing="ease-in-sine" data-aos-duration="800">
+						<h4>Office of the Superintendent of Financial Institutions</h4>
+						<span>Network Infrastructure Specialist</span>
+						<p>June 2021 – April 2023<br>
+							Managed and secured cloud/hybrid infrastructure, IAM (Azure AD/ADFS), and network
+							security. Supported DevSecOps, containerized workloads (Docker/Kubernetes), and endpoint
+							compliance via Microsoft Intune.
+						</p>
+						</div>
+						<div class="experience-time">
+						<h4>2021 – 2023</h4>
+						</div>
+					</li>
+
+					<!-- Platform Optimization Specialist -->
+					<li>
+						<div class="experience-content ml-ec" data-aos="fade-in" data-aos-offset="100"
+						data-aos-easing="ease-in-sine" data-aos-duration="800">
+						<h4>Statistics Canada</h4>
+						<span>Platform Optimization Specialist</span>
+						<p>November 2020 – June 2021<br>
+							Operated secure analytics platforms with Linux, Azure, Kubernetes, and Docker.
+							Hardened container and HPC environments, maintained secure access, and monitored logs for
+							potential security incidents.
+						</p>
+						</div>
+						<div class="experience-time">
+						<h4>2020 – 2021</h4>
+						</div>
+					</li>
+
+					<!-- SecOps / Architect -->
+					<li>
+						<div class="experience-content mr-ec">
+						<h4>City of Laval</h4>
+						<span>SecOps / Architect</span>
+						<p>November 2015 – November 2020<br>
+							Secured cloud and hybrid infrastructure (Azure, AWS), hardened Linux servers and
+							containers, implemented CI/CD with embedded security, and supported DevSecOps initiatives.
+						</p>
+						</div>
+						<div class="experience-time">
+						<h4>2015 – 2020</h4>
+						</div>
+					</li>
+
+					<!-- SharePoint Security & Cloud Specialist -->
+					<li>
+						<div class="experience-content ml-ec">
+						<h4>City of Laval</h4>
+						<span>SharePoint Security & Cloud Specialist</span>
+						<p>November 2012 – 2015<br>
+							Managed multi-farm SharePoint environments, enforced ADFS SSO, applied security patches,
+							and monitored systems for compliance with organizational policies.
+						</p>
+						</div>
+						<div class="experience-time">
+						<h4>2012 – 2015</h4>
+						</div>
+					</li>
+
+					<!-- Systems & Security Administrator -->
+					<li>
+						<div class="experience-content mr-ec">
+						<h4>City of Laval</h4>
+						<span>Systems & Security Administrator</span>
+						<p>November 2008 – January 2012<br>
+							Administered Windows, Linux, and Unix servers, managed Symantec security, certificates,
+							e-tokens, and implemented monitoring and patching procedures for secure operations.
+						</p>
+						</div>
+						<div class="experience-time">
+						<h4>2008 – 2012</h4>
+						</div>
+					</li>
+
+					<!-- Database & Security Manager -->
+					<li>
+						<div class="experience-content ml-ec">
+						<h4>CSC Canada</h4>
+						<span>Database & Security Manager</span>
+						<p>July 2007 – November 2008<br>
+							Maintained and secured SQL/Oracle databases, enforced access control, backups, and patching,
+							integrated logs into SIEM, and supported secure developer access.
+						</p>
+						</div>
+						<div class="experience-time">
+						<h4>2007 – 2008</h4>
+						</div>
+					</li>
+
+					<!-- Database & Security Administrator -->
+					<li>
+						<div class="experience-content mr-ec">
+						<h4>Covansys Canada</h4>
+						<span>Database & Security Administrator</span>
+						<p>July 2006 – July 2007<br>
+							Secured SQL/Oracle databases, implemented access controls, managed backups, and integrated
+							monitoring for security incidents.
+						</p>
+						</div>
+						<div class="experience-time">
+						<h4>2006 – 2007</h4>
+						</div>
+					</li>
+
+					<!-- Security & Integration Architect -->
+					<li>
+						<div class="experience-content ml-ec">
+						<h4>Wyeth Pharma / Pfizer</h4>
+						<span>Security & Integration Architect</span>
+						<p>March 2005 – June 2006<br>
+							Managed network security, ERP platform security, STARLIMS systems, and conducted penetration
+							tests to validate defenses and enforce secure configurations.
+						</p>
+						</div>
+						<div class="experience-time">
+						<h4>2005 – 2006</h4>
+						</div>
+					</li>
+
+					<!-- Network and Security Administrator -->
+					<li>
+						<div class="experience-content mr-ec">
+						<h4>Wyeth Pharma / Pfizer</h4>
+						<span>Network and Security Administrator</span>
+						<p>March 2004 – June 2005<br>
+							Planned and implemented network hardening, monitored logs in SIEM, performed vulnerability
+							testing, and secured network and application servers.
+						</p>
+						</div>
+						<div class="experience-time">
+						<h4>2004 – 2005</h4>
+						</div>
+					</li>
+
+					<!-- Senior Network Administrator -->
+					<li>
+						<div class="experience-content ml-ec">
+						<h4>Tac Inc</h4>
+						<span>Senior Network Administrator</span>
+						<p>October 2002 – February 2004<br>
+							Secured VPN and network infrastructure, maintained Linux/Windows servers, configured Snort IDS
+							sensors, and integrated logs into SIEM for centralized threat detection.
+						</p>
+						</div>
+						<div class="experience-time">
+						<h4>2002 – 2004</h4>
+						</div>
+					</li>
+
+					<!-- Network Technician -->
+					<li>
+						<div class="experience-content mr-ec">
+						<h4>NexInnovation</h4>
+						<span>Network Technician</span>
+						<p>October 2000 – June 2001<br>
+							Migrated email and network servers securely, configured OWA with access policies, monitored
+							logs via Syslog, and supported network hardening and incident detection.
+						</p>
+						</div>
+						<div class="experience-time">
+						<h4>2000 – 2001</h4>
+						</div>
+					</li>
+
+					</ul>
+				</div>
+				</div>
+			</div>
+			</div>
 			<!--section number-->
-			<div class="section-number" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="800">
-				<h1>04</h1>
+			<div class="section-number" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-sine"
+			data-aos-duration="800">
+			<h1>04</h1>
 			</div>
 		</div>
 	</section>
+
 	<!-- =========Project Area=========== -->
 	<section id="project" style="display:none">
 		<div class="projects-area">
@@ -754,7 +916,8 @@
 				</div>
 			</div>
 			<!--section number-->
-			<div class="section-number" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="800">
+			<div class="section-number" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-sine"
+				data-aos-duration="800">
 				<h1>05</h1>
 			</div>
 		</div>
@@ -782,7 +945,11 @@
 							<div class="client-text">
 								<h4>JOHN DOE</h4>
 								<span>Marketing head of Gilroy</span>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et sollicitudin odio, et placerat leo. Sed dapibus luctus nisi at sagittis. Donec dignissim elementum egestas. Phasellus blandit libero a lorem euismod dapibus. Nunc porttitor dolor ac dolor laoreet feugiat. Etiam sagittis est magna, sit amet faucibus lacus elementum id. Sed eget mi posuere, rhoncus tempor dui consequat vel.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et sollicitudin
+									odio, et placerat leo. Sed dapibus luctus nisi at sagittis. Donec dignissim
+									elementum egestas. Phasellus blandit libero a lorem euismod dapibus. Nunc porttitor
+									dolor ac dolor laoreet feugiat. Etiam sagittis est magna, sit amet faucibus lacus
+									elementum id. Sed eget mi posuere, rhoncus tempor dui consequat vel.</p>
 							</div>
 							<div class="client-location north-region">
 								<i class="fas fa-map-marker-alt" title="Asia"></i>
@@ -796,7 +963,11 @@
 							<div class="client-text">
 								<h4>JOHN DOE</h4>
 								<span>Marketing head of Gilroy</span>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et sollicitudin odio, et placerat leo. Sed dapibus luctus nisi at sagittis. Donec dignissim elementum egestas. Phasellus blandit libero a lorem euismod dapibus. Nunc porttitor dolor ac dolor laoreet feugiat. Etiam sagittis est magna, sit amet faucibus lacus elementum id. Sed eget mi posuere, rhoncus tempor dui consequat vel.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et sollicitudin
+									odio, et placerat leo. Sed dapibus luctus nisi at sagittis. Donec dignissim
+									elementum egestas. Phasellus blandit libero a lorem euismod dapibus. Nunc porttitor
+									dolor ac dolor laoreet feugiat. Etiam sagittis est magna, sit amet faucibus lacus
+									elementum id. Sed eget mi posuere, rhoncus tempor dui consequat vel.</p>
 							</div>
 							<div class="client-location asia-region">
 								<i class="fas fa-map-marker-alt" title="America"></i>
@@ -810,7 +981,11 @@
 							<div class="client-text">
 								<h4>JOHN DOE</h4>
 								<span>Marketing head of Gilroy</span>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et sollicitudin odio, et placerat leo. Sed dapibus luctus nisi at sagittis. Donec dignissim elementum egestas. Phasellus blandit libero a lorem euismod dapibus. Nunc porttitor dolor ac dolor laoreet feugiat. Etiam sagittis est magna, sit amet faucibus lacus elementum id. Sed eget mi posuere, rhoncus tempor dui consequat vel.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et sollicitudin
+									odio, et placerat leo. Sed dapibus luctus nisi at sagittis. Donec dignissim
+									elementum egestas. Phasellus blandit libero a lorem euismod dapibus. Nunc porttitor
+									dolor ac dolor laoreet feugiat. Etiam sagittis est magna, sit amet faucibus lacus
+									elementum id. Sed eget mi posuere, rhoncus tempor dui consequat vel.</p>
 							</div>
 							<div class="client-location africa-region">
 								<i class="fas fa-map-marker-alt" title="Africa"></i>
@@ -820,7 +995,8 @@
 				</div>
 			</div>
 			<!--section number-->
-			<div class="section-number" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="800">
+			<div class="section-number" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-sine"
+				data-aos-duration="800">
 				<h1>06</h1>
 			</div>
 		</div>
@@ -843,19 +1019,19 @@
 				<div class="row">
 					<!--contact form-->
 					<div class="col-xl-6 col-lg-6 col-md-6">
-							<div class="alert alert-success" role="alert" >
-									Votre Message nous a bien ete envoye, je vous contacterai des que possible :)
-							</div>
+						<div class="alert alert-success" role="alert">
+							Votre Message nous a bien ete envoye, je vous contacterai des que possible :)
+						</div>
 						<form class="contact-form" id="contact-form" action="#">
 							<span>Enter your mail</span>
-							<input type="email" placeholder="Enter your email"  name="from">
+							<input type="email" placeholder="Enter your email" name="from">
 							<span>Enter your message</span>
-							<textarea rows="4" cols="50" placeholder="Write your message"  name="message"></textarea>
-							<input type="submit" value="send">
+							<textarea rows="4" cols="50" placeholder="Write your message" name="message"></textarea>
+							<input class="skill-btn" type="submit" value="send">
 						</form>
 					</div>
 					<!--contact image-->
-					<div class="col-xl-6 col-lg-6 col-md-6">
+					<div style="display:none;" class=" col-xl-6 col-lg-6 col-md-6">
 						<div class="contact-image" data-aos="fade-up" data-aos-duration="2000">
 							<img src="img/footer-me.png" alt="">
 							<div class="contact-pattern">
@@ -869,7 +1045,7 @@
 	</footer>
 	<!-- copyright text -->
 	<div class="copyright">
-		<p>© 2020 - ALL right reserved to <a href="#">.:: Adil ::.</a></p>
+		<p>© 2026 - ALL right reserved to <a href="#">.:: Adil ::.</a></p>
 	</div>
 	<!-- Jquery JS -->
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
@@ -895,31 +1071,32 @@
 	<!-- Main Js -->
 	<script src="js/main.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-	<a href="https://api.whatsapp.com/send?phone=14389267147&text=&source=&data=" class="whatsApp" target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+	<a href="https://api.whatsapp.com/send?phone=14389267147&text=&source=&data=" class="whatsApp" target="_blank"><i
+			class="fa fa-whatsapp my-whatsApp"></i></a>
 
-		<script type="text/javascript">
-			(function(){
-			   emailjs.init("user_BNx0ljMVaqf3jCkaqxkRV");
-			})();
-		 </script>
-		 
-		 <script type="text/javascript">
-			 window.onload = function() {
-				 $(".alert").hide()
-				 document.getElementById('contact-form').addEventListener('submit', function(event) {
-					 event.preventDefault();
-					 // generate the contact number value
-					 //this.contact_number.value = Math.random() * 100000 | 0;
-					 emailjs.sendForm('gmail', 'template_izatnGnY', this).then(function(response) {
-						 $('.alert').show()
-						 $("#contact-form").hide()
-								console.log('SUCCESS!', response.status, response.text);
-						 }, function(error) {
-						console.log('FAILED...', error);
-					 });;
-				 });
-			 }
-		 </script>		
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("user_BNx0ljMVaqf3jCkaqxkRV");
+		})();
+	</script>
+
+	<script type="text/javascript">
+		window.onload = function () {
+			$(".alert").hide()
+			document.getElementById('contact-form').addEventListener('submit', function (event) {
+				event.preventDefault();
+				// generate the contact number value
+				//this.contact_number.value = Math.random() * 100000 | 0;
+				emailjs.sendForm('gmail', 'template_izatnGnY', this).then(function (response) {
+					$('.alert').show()
+					$("#contact-form").hide()
+					console.log('SUCCESS!', response.status, response.text);
+				}, function (error) {
+					console.log('FAILED...', error);
+				});;
+			});
+		}
+	</script>
 </body>
 
 </html>
