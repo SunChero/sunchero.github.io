@@ -364,7 +364,7 @@ ul {
 	right: 0;
 	width: 100%;
 	z-index: 99;
-	background-color: rgba(33, 32, 71);
+	/* background-color: rgba(33, 32, 71); */
 	-webkit-box-shadow: 0px 0px 4px rgba(2, 5, 21, 0.7);
 	box-shadow: 0px 0px 50px rgba(2, 5, 21, 0.7);
 	-webkit-transition: all 1s ease 0s;
@@ -426,16 +426,13 @@ ul {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background-color: rgba(33, 32, 71, 0.7);
+	/* background-color: rgba(33, 32, 71, 0.7); */
 	height: 100vh;
 	width: 100%
 }
 
 /*2.4 header text*/
-.intro-text {
-	/* text-align: center; */
-	/* padding-top: 60px; */
-}
+
 
 .intro-text h1 {
 	text-transform: uppercase;
