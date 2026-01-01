@@ -1,0 +1,36 @@
+---
+const skills = [
+  { title: 'Security Architecture & Defense-in-Depth', value: 90 },
+  { title: 'Incident Response & Threat Hunting', value: 85 },
+  { title: 'Cloud Security (Azure / AWS / GCP)', value: 85 },
+  { title: 'Identity Security (IAM / SSO / MFA)', value: 90 },
+  { title: 'Kubernetes / Container Security', value: 95 },
+]
+---
+
+<section id="expertise" class="w-full py-32 px-4 bg-gradient-to-b from-black to-surface">
+  <div class="max-w-7xl mx-auto px-4">
+
+    <h4 class="text-primary uppercase text-sm font-bold tracking-widest">Area of</h4>
+    <h2 class="text-5xl font-bold mb-16">Expertise</h2>
+
+    <div class="space-y-8">
+      {skills.map(skill => (
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-sm font-semibold">{skill.title}</span>
+            <span class="text-sm">{skill.value}%</span>
+          </div>
+
+          <div class="w-full h-2 bg-gray-700 rounded">
+            <div
+              class="h-2 bg-accent rounded transition-all duration-1000"
+              style={`width: ${skill.value}%`}
+            ></div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

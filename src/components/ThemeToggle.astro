@@ -1,0 +1,21 @@
+<button
+  aria-label="Toggle theme"
+  class="ml-4 text-accent text-xl"
+  onclick="toggleTheme()"
+>
+  🌙
+</button>
+
+<script>
+  const root = document.documentElement
+
+  function toggleTheme() {
+    const isDark = root.classList.toggle('dark')
+    localStorage.setItem('theme', isDark ? 'dark' : 'light')
+  }
+
+  // Init
+  if (localStorage.theme === 'dark') {
+    root.classList.add('dark')
+  }
+</script>

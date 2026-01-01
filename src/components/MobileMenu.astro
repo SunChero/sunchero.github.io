@@ -1,0 +1,42 @@
+---
+---
+
+<div id="mobile-menu-container">
+  <button
+    id="mobile-menu-button"
+    aria-label="Toggle Menu"
+    class="md:hidden text-accent"
+    aria-expanded="false"
+  >
+    ☰
+  </button>
+
+  <div
+    id="mobile-menu"
+    class="hidden fixed inset-0 bg-black bg-opacity-95 z-50 flex flex-col items-center justify-center space-y-8 text-xl"
+  >
+    <a href="#home" class="mobile-menu-link">Home</a>
+    <a href="#about" class="mobile-menu-link">About</a>
+    <a href="#expertise" class="mobile-menu-link">Skills</a>
+    <a href="#projects" class="mobile-menu-link">Projects</a>
+    <a href="#contact" class="mobile-menu-link">Contact</a>
+  </div>
+</div>
+
+<script>
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  const links = document.querySelectorAll('.mobile-menu-link');
+
+  button?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+    button.setAttribute('aria-expanded', menu?.classList.contains('hidden') ? 'false' : 'true');
+  });
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      menu?.classList.add('hidden');
+      button?.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>

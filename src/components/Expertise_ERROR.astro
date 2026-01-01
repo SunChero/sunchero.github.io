@@ -1,0 +1,98 @@
+---
+const categories = [
+  {
+    title: 'Cyber Security & Defense',
+    skills: [
+      { name: 'Security Architecture & Defense-in-Depth', value: 90 },
+      { name: 'MITRE ATT&CK / Threat Modeling', value: 80 },
+      { name: 'Incident Response & Handling', value: 85 },
+      { name: 'Digital Forensics & Log Analysis', value: 75 },
+      { name: 'SIEM / Monitoring / Alerting (Splunk, QRadar)', value: 80 },
+      { name: 'Identity Security (IAM, SSO, MFA, PAM)', value: 90 },
+      { name: 'Cloud Security (Azure / AWS / GCP)', value: 85 },
+      { name: 'Vulnerability Management & Hardening', value: 85 },
+      { name: 'Zero Trust & Secure Access Models', value: 80 },
+      { name: 'Endpoint Security & Threat Hunting', value: 80 },
+      { name: 'Penetration Testing / Red Teaming', value: 70 },
+    ]
+  },
+  {
+    title: 'Secure Systems & Infrastructure',
+    skills: [
+      { name: 'Microsoft Windows Security', value: 90 },
+      { name: 'Unix/Linux Security', value: 95 },
+      { name: 'VMware / KVM', value: 90 },
+      { name: 'Kubernetes / Container Security', value: 95 },
+      { name: 'Network Security (Firewalls, IDS/IPS, VPN)', value: 85 },
+      { name: 'Web / API Security (WAF, API Gateway)', value: 85 },
+    ]
+  },
+  {
+    title: 'Cloud & Platform Security',
+    skills: [
+      { name: 'Microsoft Azure Security', value: 90 },
+      { name: 'AWS Security', value: 80 },
+      { name: 'GCP Security', value: 60 },
+      { name: 'Office 365 / SharePoint Security', value: 90 },
+      { name: 'Salesforce Security', value: 50 },
+      { name: 'ECM / CMS Security', value: 90 },
+    ]
+  },
+  {
+    title: 'Secure Architecture & DevSecOps',
+    skills: [
+      { name: 'DevSecOps Practices', value: 80 },
+      { name: 'CI / CD Security', value: 80 },
+      { name: 'IaC / Terraform Security', value: 80 },
+      { name: 'Docker / Kubernetes Security', value: 80 },
+      { name: 'OpenID / JWT / SAML', value: 80 },
+      { name: 'Git / Bitbucket Security', value: 90 },
+      { name: 'Monitoring & Logging (Prometheus / Grafana / ELK)', value: 80 },
+      { name: 'RabbitMQ / Messaging Security', value: 90 },
+    ]
+  },
+  {
+    title: 'Database Security',
+    skills: [
+      { name: 'SQL Server', value: 85 },
+      { name: 'Oracle', value: 70 },
+      { name: 'Postgres / MySQL', value: 70 },
+      { name: 'MongoDB / Cassandra / Redis', value: 70 },
+    ]
+  }
+]
+---
+
+<section id="expertise" class="w-full py-32 px-4 bg-gradient-to-b from-black to-surface">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-20">
+      <h4 class="text-primary uppercase text-sm font-bold tracking-widest">01</h4>
+      <h4 class="text-primary uppercase text-sm font-bold tracking-widest mt-4">Area Of</h4>
+      <h2 class="text-5xl font-bold mb-8 mt-4">Expertise</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-16">
+      {categories.map(cat => (
+        <div class="space-y-8">
+          <h3 class="text-2xl font-bold text-primary border-b border-primary pb-4">{cat.title}</h3>
+          <div class="space-y-8">
+            {cat.skills.map(skill => (
+              <div>
+                <div class="flex justify-between items-start mb-3">
+                  <h4 class="text-sm font-bold uppercase text-white pr-4 flex-1">{skill.name}</h4>
+                  <span class="text-xs font-bold text-primary whitespace-nowrap">{skill.value}%</span>
+                </div>
+                <div class="w-full h-1 bg-gray-800 rounded-full overflow-hidden">
+                  <div
+                    class="h-full bg-primary rounded-full transition-all duration-1000"
+                    style={`width: ${skill.value}%`}
+                  ></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

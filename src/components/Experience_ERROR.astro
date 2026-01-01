@@ -1,0 +1,97 @@
+---
+const experiences = [
+  {
+    company: 'Office of the Superintendent of Financial Institutions',
+    role: 'Senior Security Operation Analyst',
+    period: 'April 2023 - Present',
+    desc: 'Focus on incident response, threat hunting, and cloud/hybrid security. Key tasks include monitoring alerts in Azure Sentinel and Microsoft Defender XDR, automating SOAR workflows, and improving detection rules to reduce false positives.'
+  },
+  {
+    company: 'Office of the Superintendent of Financial Institutions',
+    role: 'Network Infrastructure Specialist',
+    period: 'June 2021 – April 2023',
+    desc: 'Managed and secured cloud/hybrid infrastructure, IAM (Azure AD/ADFS), and network security. Supported DevSecOps, containerized workloads (Docker/Kubernetes), and endpoint compliance via Microsoft Intune.'
+  },
+  {
+    company: 'Statistics Canada',
+    role: 'Platform Optimization Specialist',
+    period: 'November 2020 – June 2021',
+    desc: 'Operated secure analytics platforms with Linux, Azure, Kubernetes, and Docker. Hardened container and HPC environments, maintained secure access, and monitored logs for potential security incidents.'
+  },
+  {
+    company: 'City of Laval',
+    role: 'SecOps / Architect',
+    period: 'November 2015 – November 2020',
+    desc: 'Secured cloud and hybrid infrastructure (Azure, AWS), hardened Linux servers and containers, implemented CI/CD with embedded security, and supported DevSecOps initiatives.'
+  },
+  {
+    company: 'City of Laval',
+    role: 'SharePoint Security & Cloud Specialist',
+    period: 'November 2012 – 2015',
+    desc: 'Managed multi-farm SharePoint environments, enforced ADFS SSO, applied security patches, and monitored systems for compliance with organizational policies.'
+  },
+  {
+    company: 'City of Laval',
+    role: 'Systems & Security Administrator',
+    period: 'November 2008 – January 2012',
+    desc: 'Administered Windows, Linux, and Unix servers, managed Symantec security, certificates, e-tokens, and implemented monitoring and patching procedures for secure operations.'
+  },
+  {
+    company: 'CSC Canada',
+    role: 'Database & Security Manager',
+    period: 'July 2007 – November 2008',
+    desc: 'Maintained and secured SQL/Oracle databases, enforced access control, backups, and patching, integrated logs into SIEM, and supported secure developer access.'
+  },
+  {
+    company: 'Covansys Canada',
+    role: 'Database & Security Administrator',
+    period: 'July 2006 – July 2007',
+    desc: 'Secured SQL/Oracle databases, implemented access controls, managed backups, and integrated monitoring for security incidents.'
+  },
+  {
+    company: 'Wyeth Pharma / Pfizer',
+    role: 'Security & Integration Architect',
+    period: 'March 2005 – June 2006',
+    desc: 'Managed network security, ERP platform security, STARLIMS systems, and conducted penetration tests to validate defenses and enforce secure configurations.'
+  },
+  {
+    company: 'Wyeth Pharma / Pfizer',
+    role: 'Network and Security Administrator',
+    period: 'March 2004 – June 2005',
+    desc: 'Planned and implemented network hardening, monitored logs in SIEM, performed vulnerability testing, and secured network and application servers.'
+  },
+  {
+    company: 'TAC Inc',
+    role: 'Senior Network Administrator',
+    period: 'October 2002 – February 2004',
+    desc: 'Secured VPN and network infrastructure, maintained Linux/Windows servers, configured Snort IDS sensors, and integrated logs into SIEM for centralized threat detection.'
+  },
+  {
+    company: 'NexInnovation',
+    role: 'Network Technician',
+    period: 'October 2000 – June 2001',
+    desc: 'Migrated email and network servers securely, configured OWA with access policies, monitored logs via Syslog, and supported network hardening and incident detection.'
+  }
+]
+---
+
+<section id="experience" class="w-full py-32 px-4 bg-black">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-20">
+      <h4 class="text-primary uppercase text-sm font-bold tracking-widest">02</h4>
+      <h4 class="text-primary uppercase text-sm font-bold tracking-widest mt-4">Some of</h4>
+      <h2 class="text-5xl font-bold mb-8 mt-4">My Cybersecurity Experience</h2>
+    </div>
+
+    <div class="grid grid-cols-1 gap-12">
+      {experiences.map((exp, idx) => (
+        <div class="border-l-2 border-primary pl-8 pb-8">
+          <h4 class="text-xl font-bold text-white uppercase">{exp.company}</h4>
+          <span class="text-primary font-bold text-sm uppercase block mt-2">{exp.role}</span>
+          <p class="text-gray-300 leading-relaxed mt-4">{exp.desc}</p>
+          <span class="block mt-4 text-xs text-gray-400 uppercase font-bold">{exp.period}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

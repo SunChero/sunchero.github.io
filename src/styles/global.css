@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-background: 16, 19, 37;
+    --color-primary: 199, 144, 0;
+    --color-surface: 33, 32, 71;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: rgb(var(--color-background));
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

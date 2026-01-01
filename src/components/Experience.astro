@@ -1,0 +1,49 @@
+---
+const experiences = [
+  {
+    company: 'Office of the Superintendent of Financial Institutions',
+    role: 'Senior Security Operation Analyst',
+    period: 'April 2023 - Present',
+    desc: 'Focus on incident response, threat hunting, and cloud/hybrid security.'
+  },
+  {
+    company: 'Office of the Superintendent of Financial Institutions',
+    role: 'Network Infrastructure Specialist',
+    period: 'June 2021 - April 2023',
+    desc: 'Managed and secured cloud/hybrid infrastructure, IAM, and network security.'
+  },
+  {
+    company: 'Statistics Canada',
+    role: 'Platform Optimization Specialist',
+    period: 'November 2020 - June 2021',
+    desc: 'Operated secure analytics platforms with Linux, Azure, Kubernetes, and Docker.'
+  },
+  {
+    company: 'City of Laval',
+    role: 'SecOps / Architect',
+    period: 'November 2015 - November 2020',
+    desc: 'Secured cloud and hybrid infrastructure, hardened servers and containers.'
+  }
+]
+---
+
+<section id="experience" class="w-full py-32 px-4 bg-black">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-20">
+      <h4 class="text-primary uppercase text-sm font-bold tracking-widest">02</h4>
+      <h4 class="text-primary uppercase text-sm font-bold tracking-widest mt-4">Some of</h4>
+      <h2 class="text-5xl font-bold mb-8 mt-4">My Cybersecurity Experience</h2>
+    </div>
+
+    <div class="grid grid-cols-1 gap-12">
+      {experiences.map((exp) => (
+        <div class="border-l-2 border-primary pl-8 pb-8">
+          <h4 class="text-xl font-bold text-white uppercase">{exp.company}</h4>
+          <span class="text-primary font-bold text-sm uppercase block mt-2">{exp.role}</span>
+          <p class="text-gray-300 leading-relaxed mt-4">{exp.desc}</p>
+          <span class="block mt-4 text-xs text-gray-400 uppercase font-bold">{exp.period}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
