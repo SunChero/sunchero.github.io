@@ -1,0 +1,117 @@
+---
+title: Route64 IPv6 WireGuard Tunnel on OPNsense
+description: A step-by-step guide to routing VLAN-specific IPv6 traffic through a Route64 WireGuard tunnel.
+sidebar:
+  order: 1
+---
+
+This guide outlines the configuration required to establish a Route64 WireGuard tunnel on OPNsense (2026) and route traffic specifically from **VLAN 40** through that tunnel.
+
+## Prerequisites
+
+- An active [Route64.org](www.route64.org) WireGuard tunnel config.
+- OPNsense installed (Version 24.1 or later recommended).
+- A managed switch configured to tag VLAN 40 traffic.
+
+---
+
+## Step 1: WireGuard Tunnel Setup
+
+### Create the Peer
+1. Navigate to **VPN > WireGuard > Peers** and click **+ Add**.
+2. **Name**: `Route64_Endpoint`
+3. **Public Key**: Paste the `PublicKey` from your Route64 config.
+4. **Allowed IPs**: `::/1, 8000::/1` (This covers the entire IPv6 space).
+5. **Endpoint Address**: `185.121.24.73`
+6. **Endpoint Port**: `50938`
+7. **Keepalive**: `15`
+
+### Create the Instance
+1. Navigate to **VPN > WireGuard > Instances** and click **+ Add**.
+2. **Name**: `Route64_Tunnel`
+3. **Private Key**: Paste your `PrivateKey`.
+4. **Tunnel Address**: `2a11:6c7:f04:14a::2/64`
+5. **Peers**: Select `Route64_Endpoint`.
+
+### Enable Service
+- Go to **VPN > WireGuard > General**, check **Enable WireGuard**, and click **Apply**.
+
+---
+
+## Step 2: Interface & Gateway Assignment
+
+### Interface Mapping
+1. Go to **Interfaces > Assignments**.
+2. Select the `wg0` device and click **Add**.
+3. Click on the new interface (e.g., `OPT1`) and configure:
+   - **Enabled**: Checked
+   - **Description**: `WG_ROUTE64`
+   - **IPv4/IPv6 Configuration**: `None`
+4. **Save** and **Apply**.
+
+### Create Gateway
+1. Go to **System > Gateways > Single** and click **+ Add**.
+2. **Name**: `ROUTE64_GW`
+3. **Interface**: `WG_ROUTE64`
+4. **Address Family**: `IPv6`
+5. **IP Address**: `2a11:6c7:f04:14a::1` (The remote peer address).
+6. **Far Gateway**: Checked.
+
+---
+
+## Step 3: VLAN 40 Configuration
+
+### VLAN Creation
+1. Go to **Interfaces > Other Types > VLAN**.
+2. **Parent**: Your physical LAN port.
+3. **Tag**: `40`
+4. **Description**: `VLAN40_IPv6`
+
+### IP Assignment
+1. Go to **Interfaces > Assignments** and add the VLAN 40 device.
+2. Under the interface settings:
+   - **IPv6 Configuration**: `Static IPv6`
+   - **IPv6 Address**: `fd40::1` / `64` (Private ULA).
+
+### Router Advertisements (RA)
+1. Go to **Services > Router Advertisements > [VLAN40]**.
+2. **Mode**: `Assisted`
+3. **DNS**: Enter `2001:4860:4860::8888` (Google DNS) to ensure clients can resolve hosts.
+
+---
+
+## Step 4: Routing & NAT
+
+### Outbound NAT
+Since the tunnel only provides one IPv6 address, we must NAT the VLAN 40 traffic.
+1. Go to **Firewall > NAT > Outbound**.
+2. Select **Hybrid Outbound NAT** and click **Save**.
+3. Click **+ Add**:
+   - **Interface**: `WG_ROUTE64`
+   - **TCP/IP Version**: `IPv6`
+   - **Source**: `VLAN40 net`
+   - **Translation**: `Interface address`
+
+### Policy-Based Routing
+1. Go to **Firewall > Rules > [VLAN40]**.
+2. Click **+ Add** (at the top):
+   - **Action**: `Pass`
+   - **TCP/IP Version**: `IPv6`
+   - **Source**: `VLAN40 net`
+   - **Gateway**: `ROUTE64_GW`
+
+---
+
+## Step 5: Testing
+
+From a client connected to **VLAN 40**, run the following commands:
+
+```bash
+# Verify local IPv6 address (should be fd40::...)
+ipconfig
+
+# Test DNS and Routing
+ping -6 google.com
+
+# Confirm external IPv6 is the Route64 address
+curl -6 ifconfig.me
