@@ -54,7 +54,7 @@ Download newest release from [Github.com](https://github.com/MonitorControl/Moni
 ![example](./screenshot.png)
 ![example](./pref_1.png)
 ![example](./pref_2.png)
-![example](./pref_3.png)
+![example]()
 ![example](./pref_4.png)
 
 ## URL list
