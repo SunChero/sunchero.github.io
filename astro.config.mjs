@@ -9,6 +9,9 @@ import tailwindcss from '@tailwindcss/vite';
 // import pagePlugin from "@pelagornis/page";
 // https://astro.build/config
 export default defineConfig({
+	image: {
+    service: { entrypoint: 'astro/assets/services/noop' },
+  },
 	site: 'https://hanifi.ca',
 	integrations: [
 		starlight({
