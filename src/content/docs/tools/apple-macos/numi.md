@@ -19,7 +19,7 @@ Download newest release from [Github.com](https://github.com/nikolaeu/numi/relea
 
 ## Examples
 
-![example](./example1.gif)
+<!-- ![example](./example1.gif) -->
 
 ## URL List
 
