@@ -1,0 +1,46 @@
+---
+title : "Securitytrails"
+# pre : ' '
+description : "Search Internet Assets Accurately & Instantly."
+date : 2020-08-04T17:20:04+02:00
+# hidden : true
+# draft : true
+weight : 280
+# tags : ['']
+---
+
+---
+
+Search Internet Assets Accurately & Instantly.
+
+[Securitytrails.com](https://securitytrails.com/)
+
+## Examples
+
+![Example](./example-1.png)
+![Example](./example-2.png)
+
+### API
+
+Read the docs <https://docs.securitytrails.com/>
+
+### Gather subdomains
+
+```plain
+curl --request GET \
+  --url 'https://api.securitytrails.com/v1/domain/<DOMAIN-HERE>/subdomains?children_only=false' \
+  --header 'APIKEY: <KEY-HERE>' \
+  --header 'Accept: application/json'
+```
+
+### Extract Subdomains using jq
+
+This requires [jq]({{< ref "jq" >}}) to be installed.
+
+```plain
+jq '.subdomains[]' securitytrails.json
+```
+
+## URL List
+
+- [Securitytrails.com](https://securitytrails.com/)

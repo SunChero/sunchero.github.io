@@ -1,0 +1,29 @@
+---
+title : "inSSIDer"
+# pre : ' '
+description : "Defeat Slow WiFi."
+date : 2021-05-21T13:47:08+02:00
+# hidden : true
+# draft : true
+weight : 160
+# tags : ['']
+---
+
+---
+
+Defeat Slow WiFi.
+
+## Installation
+
+Non-subscription based version.
+
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+
+## Examples
+
+![Example](./inssider_example.png)
+![Example](./inssider_example1.png)
+
+## URL List
+
+- [Metageek - inSSIDer](https://www.metageek.com/products/inssider/)

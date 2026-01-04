@@ -2,11 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @import "@pelagornis/page/styles"; */
+:root{
+   /* --page-bg: #101325 !important; */
+}
+@layer starlight.base {
   :root {
-    --color-background: 16, 19, 37;
+
+     /* --sl-color-bg-nav: #101325;
+    --sl-color-bg-sidebar: #101325;
+    --sl-color-text-base: white;
+     --page-bg: rgb(var(--color-background)) !important; */
+  }
+}
+/* @layer base {
+  :root {
+    --color-background: #101325;
     --color-primary: 199, 144, 0;
     --color-surface: 33, 32, 71;
+    --page-bg: rgb(var(--color-background)) !important;
+   
   }
 
   html {
@@ -23,4 +38,4 @@
     font-size: 18px;
     line-height: 28px;
   }
-}
+} */
